@@ -11,11 +11,19 @@ h1 {
     font-family: HappySchool;
     color: #2c73ab;
 }
+/* Titel van FAQ */
+h3 {
+    padding-bottom: 30px;
+}
 /* link-tekstboxes. */
 h5 {
     font-family: KGCorneroftheSky;
     color: #00268e;
     width: 100%; /* Align center */
+}
+/* terug knop */
+h6 {
+    font-weight: bold;
 }
 /* Zorg dat alle link-textboxes even hoog zijn. De tekst blijf verticaal en horizontaal gecentreerd. */
 .card-action {
