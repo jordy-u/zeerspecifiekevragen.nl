@@ -28,6 +28,8 @@ h5 {
 De afbeeldingen zijn extra breedt, zodat ze met de juiste aspect ratio mee kunnen schalen wanneer het venster breder wordt.  */
 .card-image > img {
     object-fit: cover;
+    min-height: 300px;
+    min-width: 300px;
 }
 /* Maak de zijkanten naast de titels dunner, zodat er meer tekst op 1 regel past.*/
 .card .card-action  {
@@ -36,8 +38,16 @@ De afbeeldingen zijn extra breedt, zodat ze met de juiste aspect ratio mee kunne
 }
 /* Ruimte tussen de kaarten */
 .card {
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    min-width: 300px;
+}
+/* Styling voor grote schermen */
+@media only screen and (min-width : 1201px) {
+    .container {
+        width: 1185px;
+    }
+    .card {
+        max-width: 400px;
+    }
 }
