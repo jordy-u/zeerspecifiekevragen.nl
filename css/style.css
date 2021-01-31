@@ -1,0 +1,43 @@
+@font-face {
+    font-family: HappySchool;
+    src: url('/css/Happy School.ttf');
+}
+@font-face {
+    font-family: KGCorneroftheSky;
+    src: url('/css/KGCorneroftheSky.ttf');
+}
+/* Textbox voor "Zeer Specifieke Vragen.nl" */
+h1 {
+    font-family: HappySchool;
+    color: #2c73ab;
+}
+/* link-tekstboxes. */
+h5 {
+    font-family: KGCorneroftheSky;
+    color: #00268e;
+    width: 100%; /* Align center */
+}
+/* Zorg dat alle link-textboxes even hoog zijn. De tekst blijf verticaal en horizontaal gecentreerd. */
+.card-action {
+    height: 100px;
+    align-items: center;
+    text-align:center;
+    display:flex;
+}
+/* Het midden van de afbeelding is altijd zichtbaar, met de volledige hoogte.
+De afbeeldingen zijn extra breedt, zodat ze met de juiste aspect ratio mee kunnen schalen wanneer het venster breder wordt.  */
+.card-image > img {
+    object-fit: cover;
+}
+/* Maak de zijkanten naast de titels dunner, zodat er meer tekst op 1 regel past.*/
+.card .card-action  {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+/* Ruimte tussen de kaarten */
+.card {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
