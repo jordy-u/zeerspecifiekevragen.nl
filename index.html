@@ -24,6 +24,10 @@
     <!-- Achtergrond -->
     <link rel="stylesheet" type="text/css" href="/css/achtergrond.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Custom web component: website-card -->
+    <script type="text/javascript" src="js/WebsiteCard.js"></script>
+
     <title>Zeer specifieke vragen</title>
 
     <!-- GPDR-vriendelijke website statistieken -->
@@ -43,86 +47,17 @@
             <h1 class="hide-on-large-only header center">Ze&#8204;er<br>Specifieke<br>Vragen.nl</h1>
         </div>
         <div class="row">
-            <div class="col m12 l6 xl4">
-                <a class="black-text" href="http://tijdvoorbier.nl">
-                    <div class="card hoverable z-depth-5">
-                        <div class="card-image"><img src="images/tijdvoorbier.nl.png" height="300px"></div>
-                        <div class="card-action"><h5>(Is het) tijd voor bier.nl</h5></div>
-                    </div>
-                </a>
-            </div>
-            <div class="col m12 l6 xl4">
-                <a class="black-text" href="https://ishetalbiertijd.nl">
-                    <div class="card hoverable z-depth-5">
-                        <div class="card-image"><img src="images/ishetalbiertijd.nl.png" height="300px"></div>
-                        <div class="card-action"><h5>Is het al biertijd.nl</h5></div>
-                    </div>
-                </a>
-            </div>
-            <div class="col m12 l6 xl4">
-                <a class="black-text" href="https://kwartoverbier.nl">
-                    <div class="card hoverable z-depth-5">
-                        <div class="card-image"><img src="images/kwartoverbier.nl.png" height="300px"></div>
-                        <div class="card-action"><h5>(Is het al) kwart over bier.nl</h5></div>
-                    </div>
-                </a>
-            </div>
-            <div class="col m12 l6 xl4">
-                <a class="black-text" href="https://ishetalvieruur.nl">
-                    <div class="card hoverable z-depth-5">
-                        <div class="card-image"><img src="images/ishetalvieruur.nl.png" height="300px"></div>
-                        <div class="card-action"><h5>Is het al vier uur.nl</h5></div>
-                    </div>
-                </a>
-            </div>
-            <div class="col m12 l6 xl4">
-                <a class="black-text" href="https://magikvandaaggaanrellen.nl">
-                    <div class="card hoverable z-depth-5">
-                        <div class="card-image"><img src="images/magikvandaaggaanrellen.nl.png" height="300px"></div>
-                        <div class="card-action"><h5>Mag ik vandaag gaan rellen.nl</h5></div>
-                    </div>
-                </a>
-            </div>
-            <div class="col m12 l6 xl4">
-                <a class="black-text" href="https://magikhethuisverlaten.nl">
-                    <div class="card hoverable z-depth-5">
-                        <div class="card-image"><img src="images/magikhethuisverlaten.nl.png" height="300px"></div>
-                        <div class="card-action"><h5>Mag ik het huis verlaten.nl</h5></div>
-                    </div>
-                </a>
-            </div>
-            <div class="col m12 l6 xl4">
-                <a class="black-text" href="https://brakofcorona.nl">
-                    <div class="card hoverable z-depth-5">
-                        <div class="card-image"><img src="images/brakofcorona.nl.png" height="300px"></div>
-                        <div class="card-action"><h5>Brak of corona.nl</h5></div>
-                    </div>
-                </a>
-            </div>
-            <div class="col m12 l6 xl4">
-                <a class="black-text" href="https://ishetbijnakerst.nl">
-                    <div class="card hoverable z-depth-5">
-                        <div class="card-image"><img src="images/ishetbijnakerst.nl.png" height="300px"></div>
-                        <div class="card-action"><h5>Is het bijna Kerst.nl</h5></div>
-                    </div>
-                </a>
-            </div>
-            <div class="col m12 l6 xl4">
-                <a class="black-text" href="https://kanikeenkortebroekaan.nl">
-                    <div class="card hoverable z-depth-5">
-                        <div class="card-image"><img src="images/kanikeenkortebroekaan.nl.png" height="300px"></div>
-                        <div class="card-action"><h5>Kan ik een korte broek aan.nl</h5></div>
-                    </div>
-                </a>
-            </div>
-            <div class="col m12 l6 xl4">
-                <a class="black-text" href="http://watkanjewel.nl">
-                    <div class="card hoverable z-depth-5">
-                        <div class="card-image"><img src="images/watkanjewel.nl.png" height="300px"></div>
-                        <div class="card-action"><h5>Wat kan je wel.nl</h5></div>
-                    </div>
-                </a>
-            </div>
+
+            <div is="website-card" href="http://tijdvoorbier.nl" imgSrc="images/tijdvoorbier.nl.png" titel="(Is het) tijd voor bier.nl"></div>
+            <div is="website-card" href="https://ishetalbiertijd.nl" imgSrc="images/ishetalbiertijd.nl.png" titel="Is het al biertijd.nl"></div>
+            <div is="website-card" href="https://kwartoverbier.nl" imgSrc="images/kwartoverbier.nl.png" titel="(Is het al) kwart over bier.nl"></div>
+            <div is="website-card" href="http://ishetalvieruur.nl" imgSrc="images/ishetalvieruur.nl.png" titel="Is het al vier uur.nl"></div>
+            <div is="website-card" href="https://magikvandaaggaanrellen.nl" imgSrc="images/magikvandaaggaanrellen.nl.png" titel="Mag ik vandaag gaan rellen.nl"></div>
+            <div is="website-card" href="https://magikhethuisverlaten.nl" imgSrc="images/magikhethuisverlaten.nl.png" titel="Mag ik het huis verlaten.nl"></div>
+            <div is="website-card" href="https://brakofcorona.nl" imgSrc="images/brakofcorona.nl.png" titel="Brak of corona.nl"></div>
+            <div is="website-card" href="https://ishetbijnakerst.nl" imgSrc="images/ishetbijnakerst.nl.png" titel="Is het bijna Kerst.nl"></div>
+            <div is="website-card" href="https://kanikeenkortebroekaan.nl" imgSrc="images/kanikeenkortebroekaan.nl.png" titel="Kan ik een korte broek aan.nl"></div>
+            <div is="website-card" href="http://watkanjewel.nl" imgSrc="images/watkanjewel.nl.png" titel="Wat kan je wel.nl"></div>
         </div>
     </div>
 </main>
