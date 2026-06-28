@@ -56,6 +56,15 @@ class WebsiteCard extends HTMLDivElement {
         this.image.setAttribute('src', this.getAttribute("imgSrc"));
         this.image.setAttribute('alt', this.getAttribute("titel"));
         this.titel.innerText = this.getAttribute("titel");
+
+        console.log("WebsiteCard connectedCallback: " + this.getAttribute("titel"));
+        console.log("WebsiteCard connectedCallback: " + this.getAttribute("fontSize"));
+
+        // Titels met meer dan 4 regels tekst worden te klein weergegeven.
+        let fontSize = this.getAttribute("fontSize");
+        if (fontSize !== null) {
+            this.titel.setAttribute('style', `font-size: ${fontSize};`);
+        }
     }
 }
 
