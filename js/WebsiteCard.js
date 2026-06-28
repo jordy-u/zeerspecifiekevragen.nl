@@ -57,13 +57,22 @@ class WebsiteCard extends HTMLDivElement {
         this.image.setAttribute('alt', this.getAttribute("titel"));
         this.titel.innerText = this.getAttribute("titel");
 
-        console.log("WebsiteCard connectedCallback: " + this.getAttribute("titel"));
-        console.log("WebsiteCard connectedCallback: " + this.getAttribute("fontSize"));
-
         // Titels met meer dan 4 regels tekst worden te klein weergegeven.
         let fontSize = this.getAttribute("fontSize");
         if (fontSize !== null) {
             this.titel.setAttribute('style', `font-size: ${fontSize};`);
+        }
+
+        let warnBeforeOpening = this.getAttribute("warnBeforeOpening");
+
+        if (warnBeforeOpening === "true") {
+            this.hyperlink.addEventListener('click', (event) => {
+                event.preventDefault();
+                let userConfirmed = confirm("Deze site is offline gehaald of is mogelijk overgenomen door een derde partij en kan mogelijk schadelijk zijn. Weet je zeker dat je deze site wilt openen?");
+                if (userConfirmed) {
+                    window.open(this.hyperlink.getAttribute('href'));
+                }
+            });
         }
     }
 }
